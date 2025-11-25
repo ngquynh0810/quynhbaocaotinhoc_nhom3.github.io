@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset = "utf-8">
+  	<title>Nhóm 3 (12V)</title>
+  </head>
+  <body>
+  	<div>
+  		<h1>BÀI 9: TẠO DANH SÁCH, BẢNG</h1>
+  		<h2>LUYỆN TẬP</h2>
+  		<hr>
+  		<h3>Sửa lại chương trình trong Hình 9.5a, sử dụng thuộc tính Style thay vì thuộc tính border để tạo viền cho bảng. Sử dụng màu xanh cho viền của ô hai dòng đầu bảng và sử dụng 3 màu đỏ, vàng, xanh cho ba chữ Toán, Vật lý và Hóa học.</h3> 
+  		<p> _<table style="border-collapse: collapse;"> </p>
+  <p> <tr> </p>
+    <p> <th rowspan="2" style="border: 2px solid blue;">Họ tên</th> </p>
+    <p> <th rowspan="3" style="border: 2px solid blue;">Điểm thi</th> </p>
+  <p> </tr> </p>
+  <p> <tr> </p>
+    <p> <td style="border: 2px solid red;">Toán</td> </p>
+    <p> <td style="border: 2px solid yellow;">Vật lí</td> </p>
+    <p> <td style="border: 2px solid green;">Hóa học</td> </p>
+  <p> </tr> </p>
+<p> </table> </p> 
+        <h2>VẬN DỤNG</h2>
+        <hr>
+        <h3>Cho trước một bảng dữ liệu cỡ nx4, mỗi hàng tương ứng với một bộ (họ tên, điểm Toán, điểm Vật lý, điểm Hóa học) viết chương trình Python để tạo ra tệp HTML thực hiện việc vẽ bảng tương tự như Hình 9.5 và bổ sung dữ liệu vào các hàng phía dưới.</h3>
+        <p>def generate_html_table(data):
+    <p>html_content = "<table style=\"border-collapse: collapse;\">"</p>
+    <p># Thêm tiêu đề cho bảng</p>
+    <p>html_content += "<tr>"</p>
+    <p>html_content += "<th style=\"border: 2px solid blue;\">Họ tên</th>"</p>
+    <p>html_content += "<th style=\"border: 2px solid blue;\">Điểm Toán</th>"</p>
+    <p>html_content += "<th style=\"border: 2px solid blue;\">Điểm Vật lí</th>"</p>
+    <p>html_content += "<th style=\"border: 2px solid blue;\">Điểm Hóa học</th>"</p>
+    <p>html_content += "</tr>"</p>
+    <p># Thêm dữ liệu từ list data vào bảng</p>
+    <p>for row in data:</p>
+    <p>    html_content += "<tr>"</p>
+    <p>    for value in row:</p>
+    <p>     html_content += f"<td style=\"border: 2px solid black;\">{value}</td>"</p>
+    <p> html_content += "</tr>"</p>
+    <p>html_content += "</table>"</p>
+    <p>return html_content</p>
+    <p># Dữ liệu ban đầu</p>
+    <p>initial_data = [</p>
+    <p>["Họ tên", "Điểm Toán", "Điểm Vật lí", "Điểm Hóa học"],</p>
+    <p>["Nguyễn Văn A", "8.5", "7.0", "9.0"],</p>
+    <p>["Trần Thị B", "7.0", "8.0", "8.5"]</p>
+<p>]</p>
+    <p># Dữ liệu mới cần bổ sung</p>
+<p>new_data = [</p>
+    <p>["Lê Quang C", "6.5", "7.5", "8.0"],</p>
+    <p>["Phạm Thị D", "9.0", "8.5", "7.5"]</p>
+<p>]</p>
+<p># Kết hợp dữ liệu cũ và mới</p>
+<p>combined_data = initial_data + new_data</p>
+<p># Tạo nội dung HTML cho bảng dữ liệu</p>
+<p>html_content = generate_html_table(combined_data)</p>
+<p># Lưu nội dung HTML vào tệp</p>
+<p>with open("data_table.html", "w") as file:</p>
+<p>    file.write(html_content)</p>
+<p>print("Tạo tệp HTML thành công!")</p>
+            </div>
+  </body>
+</html>
+
+
+
+
+
+
+ 
