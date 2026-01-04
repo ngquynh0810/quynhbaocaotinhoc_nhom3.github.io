@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset = "utf-8">
+  	<title>Nhóm 3 (12V)</title>
+  </head>
+  <body>
+  	<div>
+  		<h1>BÀI 17: CÁC MỨC ƯU TIÊN CỦA BỘ CHỌN</h1>
+  		<h2>LUYỆN TẬP</h2>
+  		<hr>
+  		<h3>luyện tập 1:Giải thích sự khác nhau giữa hai định dạng sau: #p123 + p {color: red;}
+h2#p123 + p {color: red;}</h3> 
+  		<p>Hai định dạng CSS "#p123+ p" và "h2#p123 + p" khác nhau về cách chọn phần tử HTML để áp dụng định dạng.
+- "#p123+ p": Đây là một selector có kết hợp giữa ID selector và sibling combinator. Nó chọn các phần tử p là anh em liền kề (sibling) của phần tử có ID là "p123".</p>
+<P>-"h2#p123 + p": Đây là một selector có kết hợp giữa element selector (h2), ID selector và sibling combinator. Nó chọn các phần tử p là anh em liền kề của phần tử h2 có ID là "p123". </p>
+<h3>luyện tập 2:Trong phần Thực hành, các tên riêng (tên người, tên tổ chức) cần được bổ sung định dạng đóng khung và in nghiêng. Em sẽ thực hiện các yêu cầu này như thế nào?</h3> 
+  		<p>.name {
+  font-style: italic; /* In nghiêng */
+  border: 1px solid #000; /* Đóng khung bằng đường viền màu đen */
+  padding: 2px; /* Thêm đệm xung quanh nội dung để không quá sát viền */
+  display: inline-block; /* Đảm bảo viền ôm sát nội dung */
+}</p>
+<h2>VẬN DỤNG</h2>
+  <hr>
+        <h3>Vận dụng 1: Tìm hiểu thêm các dạng pseudo-class khác, nêu ý nghĩa và tìm ví dụ ứng dụng thực tế cho các kiểu bộ chọn này</h3>
+<p>- :hover - Dạng pseudo-class này được kích hoạt khi người dùng di chuột qua một phần tử. Nó cho phép em áp dụng các định dạng CSS khi phần tử đang được hover.</p>
+<p>- :active - Dạng pseudo-class này được kích hoạt khi phần tử đang được nhấn (khi người dùng giữ chuột trái). Em có thể sử dụng nó để áp dụng các định dạng CSS khi phần tử đang ở trạng thái active.</p>
+<p>- :focus - Dạng pseudo-class này được kích hoạt khi phần tử đang trong trạng thái focus (thường xảy ra khi người dùng click hoặc sử dụng phím tab để di chuyển đến phần tử). em có thể sử dụng nó để áp dụng các định dạng CSS khi phần tử đang trong trạng thái focus.</p>
+<p>- :nth-child() - Dạng pseudo-class này cho phép bạn chọn các phần tử con trong một phần tử cha dựa trên vị trí của chúng. Bạn có thể sử dụng nó để áp dụng các định dạng CSS cho phần tử con cụ thể.</p>
+<h3>Vận dụng 2: Tìm hiểu thêm các dạng pseuso-element khác, nêu ý nghĩa và tìm ví dụ ứng dụng thực tế cho các kiểu bộ chọn này</h3>
+<P>- ::before - Dạng pseudo-element này cho phép bạn chèn nội dung vào phần tử trước nội dung chính của nó. Em có thể sử dụng nó để thêm các biểu tượng, ký hiệu hoặc phần tử trang trí trước một phần tử.</p>
+<P>- ::after - Dạng pseudo-element này cho phép bạn chèn nội dung vào phần tử sau nội dung chính của nó. Em có thể sử dụng nó để thêm các phần tử trang trí hoặc hiệu ứng sau một phần tử.</p>
+<P>- ::first-line - Dạng pseudo-element này cho phép bạn áp dụng các định dạng CSS cho dòng đầu tiên của một phần tử chứa nội dung văn bản. Em có thể sử dụng nó để thay đổi kiểu chữ, khoảng cách dòng, hoặc các thuộc tính khác cho dòng đầu tiên.</p>
+</body>
+</html>
+
+
+
+
+
+
+ 
