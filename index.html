@@ -1,52 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <title>NHÓM 3</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #8FABD4;
+    }
+
+    /* ===== LAYOUT ===== */
+    .layout {
+      display: flex;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 300px;
+      background: #B7BDF7;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-right: 6px solid #ccc;
+    }
+
+    .sidebar-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .topic-title {
+      font-weight: 700;
+      margin: 20px 0 10px;
+      font-size: 16px;
+    }
+
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      padding: 6px 0 6px 20px;
+      font-size: 15px;
+    }
+
+    .sidebar a:hover {
+      background: #BFC6C4;
+      color: white;
+    }
+
+    /* ===== CONTENT ===== */
+    .content {
+  margin-left: 450px;   /* BẰNG width sidebar */
+  padding: 20px;
+  width: calc(100% - 300px);
+}
+  </style>
 </head>
-<body style="font-family: 'Montserrat', sans-serif; background-color: #8FABD4; margin:0; padding:0;">
 
-  <!-- TIÊU ĐỀ -->
-  <div class="title-container" style="text-align: center; margin-top: 20px;">
-    <div class="title-wrapper" style="background-image: url('hinh.jpg'); background-size: cover; background-position: center; padding: 40px 20px; border-radius: 20px; width: 80%; max-width: 600px; margin: 0 auto;">
-      <h1 class="main-title" style="color: #E0C58F; font-size: 50px; margin: 0;">BÁO CÁO TIN HỌC</h1>
+<body>
+
+<div class="layout">
+
+  <!-- ===== SIDEBAR TRÁI ===== -->
+  <div class="sidebar">
+    <div class="sidebar-title">Tin học 12<br>Kết nối tri thức</div>
+
+    <div class="topic-title">
+      CHỦ ĐỀ 4: GIẢI QUYẾT VẤN ĐỀ VỚI SỰ TRỢ GIÚP CỦA MÁY TÍNH
     </div>
+
+    <a href="bài8.html">BÀI 7: HTML và cấu trúc trang web</a>
+    <a href="bài7.html">BÀI 8: Định dạng văn bản</a>
+    <a href="bài9.html">BÀI 9: Tạo danh sách, bảng</a>
+    <a href="bài10.html">BÀI 10: Tạo liên kết</a>
+    <a href="bài11.html">BÀI 11: Chèn tệp tin đa phương tiện và khung nội tuyến vào trang web</a>
+    <a href="bài12.html">BÀI 12: Tạo biểu mẫu</a>
+    <a href="bài13.html">BÀI 13: Khái niệm, vai trò của CSS</a>
+    <a href="bài14.html">BÀI 14: Định dạng văn bản bằng CSS</a>
+    <a href="bài15.html">BÀI 15: Tạo màu và chữ cho nền</a>
+    <a href="bài16.html">BÀI 16: Định dạng khung</a>
+    <a href="bài17.html">BÀI 17: Các mức ưu tiên của bộ chọn</a>
+    <a href="bài18.html">BÀI 18: Thực hành tổng hợp thiết kế trang web</a>
+<a href="https://www.canva.com/design/DAG-upgVx8k/_3KDIjz2t_pzGjHorUPFlA/edit?fbclid=IwY2xjawPjGM9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEew38ue5h9wqpOiRbMaSKHA1DZnYl8RezrHjg_VLjUEfFjq6PlliVP8CpieDs_aem_o--atU78Vq3JAt6oDP7J0Q"
+   target="_blank"
+   style="text-decoration:none; color:#ff9800; font-weight:600; color: black;">
+   CANVA
+</a>
   </div>
-
-  <!-- NAVBAR -->
-  <div style="background-color:#112250; padding:10px; text-align:center;">
-
-  <details style="display:inline-block;">
-    <summary style="color:white; cursor:pointer; list-style:none;">
-      Chủ đề 4 ▾
-    </summary>
-
-    <div style="background:#112250; margin-top:8px;">
-      <a href="bài8.html"  style="display:block; color:white; text-decoration:none;">Bài 7</a>
-      <a href="bài7.html"  style="display:block; color:white; text-decoration:none;">Bài 8</a>
-      <a href="bài9.html"  style="display:block; color:white; text-decoration:none;">Bài 9</a>
-      <a href="bài10.html" style="display:block; color:white; text-decoration:none;">Bài 10</a>
-      <a href="bài11.html" style="display:block; color:white; text-decoration:none;">Bài 11</a>
-      <a href="bài12.html" style="display:block; color:white; text-decoration:none;">Bài 12</a>
-      <a href="bài13.html" style="display:block; color:white; text-decoration:none;">Bài 13</a>
-      <a href="bài14.html" style="display:block; color:white; text-decoration:none;">Bài 14</a>
-      <a href="bài15.html" style="display:block; color:white; text-decoration:none;">Bài 15</a>
-      <a href="bài16.html" style="display:block; color:white; text-decoration:none;">Bài 16</a>
-      <a href="bài17.html" style="display:block; color:white; text-decoration:none;">Bài 17</a>
-      <a href="bài18.html" style="display:block; color:white; text-decoration:none;">Bài 18</a>
-    </div>
-  </details>
-
 </div>
+  <!-- ===== NỘI DUNG CHÍNH ===== -->
+  <div class="content">
 
-  <!-- DANH SÁCH THÀNH VIÊN NHÓM -->
-  <div style="max-width: 1200px; margin: 40px auto; text-align: center;">
-    <h2 style="color: #EFECE3; font-size: 50px; margin-bottom: 40px;">DANH SÁCH THÀNH VIÊN NHÓM</h2>
-    
+    <!-- TIÊU ĐỀ -->
+    <div style="text-align: center; margin-top: 20px;">
+      <div style="
+        background-image: url('hinh.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 40px 20px;
+        border-radius: 20px;
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;">
+        <h1 style="color: #E0C58F; font-size: 50px; margin-left: -300px ;">
+          BÁO CÁO TIN HỌC
+        </h1>
+      </div>
+    </div>
+
     <!-- HÀNG TRÊN 3 CARD -->
-    <div style="display: flex; justify-content: center; flex-wrap: nowrap;">
+    <div style="display: flex; justify-content: flex-start; flex-wrap: nowrap;">
       <!-- CARD 1 -->
       <a href="Quynh.html" style="text-decoration:none; color:inherit;">
      <div style="margin: 10px; width: 260px; background-color: white; border-radius: 20px; overflow: hidden;">
@@ -90,7 +160,7 @@
     </div>
   </a>
     <!-- HÀNG DƯỚI 2 CARD -->
-    <div style="display: flex; justify-content: center; flex-wrap: nowrap;">
+    <div style="display: flex; justify-content: flex-start; flex-wrap: nowrap;">
       <!-- CARD 4 -->
       <a href="Han.html" style="text-decoration:none; color:inherit;">
       <div style="margin: 10px; width: 260px; background-color: white; border-radius: 20px; overflow: hidden;">
@@ -119,7 +189,7 @@
       </a>
     </div>
   </div>
-  <footer style="background-color: #4A70A9;color: white;padding: 30px 20px;margin-top: 50px;border-radius: 30px 30px 0 0;font-family: 'Montserrat', sans-serif;">
+  <div style="background-color: #4A70A9;color: white; padding: 30px 20px;margin-top: 50px;border-radius: 30px 30px 30px 30px;font-family: 'Montserrat', sans-serif;margin-left: 345px;">
     <div style="max-width: 900px;margin: auto;text-align: center;">
       <h2 style="margin-bottom: 10px; font-weight: 700;">Thông tin liên hệ</h2>
       <p style="margin: 6px 0; font-size: 16px;">📞 Số điện thoại: 0943009839 (Trưởng nhóm)</p>
@@ -131,16 +201,10 @@
         © 2025 - Nhóm 3 | All rights reserved
       </p>
     </div>
-  </footer>
+  </div>
+
+</div>
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
